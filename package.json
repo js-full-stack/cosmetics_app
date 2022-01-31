@@ -19,11 +19,6 @@
     "lint": "eslint --debug src/",
     "lint:write": "eslint --debug src/ --fix"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.(js|jsx)": [
       "npm run lint:write",
