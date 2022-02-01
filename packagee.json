@@ -1,0 +1,70 @@
+
+  "name": "ts-career-website",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install && chmod ug+x .husky/*",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "proxyUrl": "http://localhost:3000",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "next": "12.0.4",
+    "next-redux-wrapper": "^7.0.5",
+    "prop-types": "^15.7.2",
+    "react": "17.0.2",
+    "react-collapsible": "^2.8.4",
+    "react-dom": "17.0.2",
+    "react-indiana-drag-scroll": "^2.1.0",
+    "react-redux": "^7.2.6",
+    "react-scrollspy": "^3.4.3",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.0",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@babel/eslint-plugin": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/runtime": "^7.16.3",
+    "@next/eslint-plugin-next": "^12.0.4",
+    "babel-plugin-styled-components": "^2.0.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.2",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "12.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^25.3.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.5",
+    "lint-staged": "11.1.2",
+    "prettier": "^2.4.1"
+  },
+  "jest": {
+    "verbose": true,
+    "clearMocks": true,
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ],
+    "snapshotSerializers": [
+      "./node_modules/enzyme-to-json/serializer"
+    ],
+    "transform": {
+      "\\.[jt]sx?$": "babel-jest"
+    }
+  }
+}
