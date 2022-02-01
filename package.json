@@ -17,12 +17,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "eslint --debug src/",
-    "prepare": "husky install && chmod ug+x .husky/*"
+    "prepare": "husky install"
   },
-  "lint-staged": {
-    "*.(js|jsx)": [
-      "npm run lint"
-    ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
   },
   "eslintConfig": {
     "extends": [
