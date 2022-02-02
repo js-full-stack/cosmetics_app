@@ -4,14 +4,15 @@
     "es2021": true
   },
   "extends": [
-    "eslint:recommended",
     "airbnb",
+    "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
     "plugin:import/recommended",
     "prettier"
   ],
+
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -19,7 +20,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "import"],
   "rules": {
     "react/jsx-filename-extension": [
       1,
@@ -27,5 +28,12 @@
         "extensions": [".js", ".jsx"]
       }
     ]
+  },
+  "settings": {
+    "import/resolver": {
+      "jsconfig": {
+        "config": "jsconfig.json"
+      }
+    }
   }
 }
