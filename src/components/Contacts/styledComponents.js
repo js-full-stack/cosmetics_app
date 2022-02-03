@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import colors from '@constants/colors'
+import colors from '../../constants/colors'
 
 const ContactsList = styled.ul`
   display: flex;
@@ -18,6 +18,11 @@ const ContactsList = styled.ul`
 
   li > a {
     color: ${colors.gray};
+  }
+
+  li > a,
+  li > svg > path {
+    transition: all 0.5s;
   }
 
   li:hover > a {

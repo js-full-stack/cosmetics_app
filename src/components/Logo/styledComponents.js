@@ -6,6 +6,7 @@ const LogoCosmetics = styled.div`
   font-weight: 700;
   line-height: 1.24;
   color: ${colors.logoOrange};
+  cursor: pointer;
 
   span {
     color: ${colors.logoBlue};

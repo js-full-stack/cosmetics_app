@@ -1,3 +1,5 @@
-export default function Home() {
-  return <div>Products page</div>
+import CategoriesSection from '../components/ProductPageComponents/CategoriesSection/CategoriesSection'
+
+export default function Products() {
+  return <CategoriesSection />
 }

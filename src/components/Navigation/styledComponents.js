@@ -12,7 +12,7 @@ const NavigationWrapper = styled.nav`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px 0;
+    gap: 30px 0;
 
     font-size: 18px;
     font-weight: 500;
@@ -25,11 +25,20 @@ const NavigationWrapper = styled.nav`
 
       .nav-link {
         color: ${colors.primaryTextBlack};
+        padding-bottom: 8px;
+
+        @media (min-width: 768px) {
+          padding-bottom: 28px;
+        }
       }
       .active-nav-link {
         color: ${colors.accentBlue};
         border-bottom: 4px solid ${colors.accentBlue};
         padding-bottom: 8px;
+
+        @media (min-width: 768px) {
+          padding-bottom: 28px;
+        }
       }
     }
 

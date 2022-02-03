@@ -20,7 +20,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "import"],
+  "plugins": ["react"],
   "rules": {
     "react/jsx-filename-extension": [
       1,
@@ -28,12 +28,5 @@
         "extensions": [".js", ".jsx"]
       }
     ]
-  },
-  "settings": {
-    "import/resolver": {
-      "jsconfig": {
-        "config": "jsconfig.json"
-      }
-    }
   }
 }
